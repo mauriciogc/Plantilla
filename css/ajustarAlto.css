@@ -1,0 +1,27 @@
+/* Ajusta el alto
+-------------------------------------------------------------- */
+
+.domAlto {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.domAlto .content {
+    padding-top: 0;
+}
+.domAltoFijo {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.homeAbajo {
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 0;
+}

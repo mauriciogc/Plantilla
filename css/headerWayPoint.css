@@ -1,0 +1,80 @@
+/* Navegacion
+-------------------------------------------------------------- */
+
+.headerWayPoint {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 50;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+.headerWayPoint-perspective {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.headerWayPoint-perspective > div {
+    background: #47C1F7;
+    text-align: left;
+    padding: 0 7%;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: justify;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.headerWayPoint-front {
+    z-index: 2;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+/* Justify inline-block elements (h1 on left side, nav on right) */
+
+.headerWayPoint-perspective > div::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Individual states */
+
+.headerWayPoint-small {
+    height: 80px;
+    background: #ffcc00;
+}
+.headerWayPoint-hide {
+    height: 80px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.headerWayPoint-show {
+    height: 80px;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.headerWayPoint-color {
+    height: 80px;
+}
+.headerWayPoint-color .headerWayPoint-front {
+    background: #00ffcc;
+    border-bottom: 1px solid #333333;
+}

@@ -1,0 +1,65 @@
+/* Parallax
+-------------------------------------------------------------- */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+.parallax {
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: 50% 0;
+    color: #ffffff;
+}
+.parallax.no-parallax {
+    /* Remove parallax effect*/
+    background-size: cover!important;
+    background-attachment: scroll!important;
+    background-position: center!important;
+}
+
+/* eSTA SIRVE PARA PODER HACER ALGO */
+
+.parallax-bg1 {
+    background: #d9534f;
+    /*border: 1px solid #FFF;*/
+    background-image: url(img/img1.png);
+    color: #000;
+}
+.parallax-bg2 {
+    background: #FFF;
+    color: #666666;
+    border: 3px solid #5bc0de;
+}
+.parallax-bg3 {
+    background: #5cb85c;
+    background-image: url(img/img2.jpg);
+    border: 1px solid #f0ad4e;
+}
+.parallax-bg4 {
+    background: #E6E6E6;
+    color: #333333;
+    border: 1px solid #d9534f;
+}
+.parallax-bg5 {
+    /*background: #f0ad4e;*/
+    background-image: url(img/img3.jpg);
+    border: 1px solid #5cb85c;
+}
+.parallax-bg6 {
+    background: #d9534f;
+    border: 1px solid #428bca;
+}
+
+/* Parallax Fix */
+
+@media only screen and (min-width: 1930px) {
+    .parallax {
+        background-size: cover;
+    }
+}
