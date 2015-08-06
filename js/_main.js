@@ -109,18 +109,18 @@ var globales = {
     wp: function (x, p) {
         "use strict";
 
-        var headWayPoint = document.getElementById('headerWayPoint');
+        var hp = document.getElementById('headerWayPoint');
 
         return new Waypoint({
             element: p[x],
             offset: 20,
             handler: function (dire) {
-                var up = this.element.getAttribute('data-animate-up'),
-                    down = this.element.getAttribute('data-animate-down');
-                if (dire === 'down' && down) {
-                    headWayPoint.className = 'headerWayPoint ' + down;
-                } else if (dire === 'up' && up) {
-                    headWayPoint.className = 'headerWayPoint ' + up;
+                var u = this.element.getAttribute('data-animate-up'),
+                    d = this.element.getAttribute('data-animate-down');
+                if (dire === 'down' && d) {
+                    hp.className = 'headerWayPoint ' + d;
+                } else if (dire === 'up' && u) {
+                    hp.className = 'headerWayPoint ' + u;
                 }
             }
         });
