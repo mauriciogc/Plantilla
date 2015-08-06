@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="css/ajustarAlto.css">
         <link rel="stylesheet" type="text/css" href="css/headerWayPoint.css">
         <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
         <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
         <!--[if lt IE 9]>
@@ -18,10 +20,11 @@
         <title>{{titulo}}</title>
 	</head>
 	<body>
-        <header id="headerWayPoint" class="headerWayPoint headerWayPoint-small">
+        <header id="headerWayPoint" class="headerWayPoint">
 		    <div class="headerWayPoint-perspective">
-		        <div class="headerWayPoint-front">
-		           <a href=""></a>
+		        <div class="headerWayPoint-front headerWayPoint-small">
+		           <a href="#" class="hwpMenu" data-scroll-id="page3">Page3</a>
+                    <a href="#" class="hwpMenu" data-scroll-class="parallax-bg5">Page5</a>
 		        </div>
 		    </div>
 		</header>
@@ -41,7 +44,6 @@
 					<h1>Esta es d sd ds dsa una sección con el contenido exacto 2</h1>
                     <div class="">
                         <p>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
-
 					</div>
 				</div>
 			</section>
@@ -74,7 +76,7 @@
 				<div class="">
                         <h1>Esta es una sección que abarca toda la pagina 6</h1>
                     <div class="row">
-                        <img class="animar" data-animation="fadeInUpBig" src="css/img/img3.jpg" alt="">
+                        <img class="animar" data-animation="fadeInUpBig" src="css/img/imgxx.png" alt="">
                         <p>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.r.</p>
 					</div>
 				</div>
@@ -86,6 +88,7 @@
         <script src="js/parallax.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.appear.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.scrollTo.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/_main.js" type="text/javascript" charset="utf-8"></script>
 
     </body>

@@ -22,7 +22,7 @@
     position: relative;
 }
 .headerWayPoint-perspective > div {
-    background: #47C1F7;
+    background: blue;
     text-align: left;
     padding: 0 7%;
     height: 50%;
@@ -57,7 +57,7 @@
 
 .headerWayPoint-small {
     height: 80px;
-    background: #ffcc00;
+    background: red;
 }
 .headerWayPoint-hide {
     height: 80px;

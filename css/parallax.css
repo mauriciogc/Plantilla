@@ -1,15 +1,5 @@
 /* Parallax
 -------------------------------------------------------------- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after,
-.container:after {
-    clear: both;
-}
 .parallax {
     width: 100%;
     background-attachment: fixed !important;
