@@ -51,13 +51,14 @@ Cuando queremos un elemento flotante en la parte de arriba
     </header>
 
 ##Animando el menú de acuerdo a las secciones
-Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos : 
-    
+Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos  
+
     data-animate-down="headerWayPoint-XXX" data-animate-up="headerWayPoint-YYY"
 
 con esto le indicamos que cuando baje haga la animación (clase)  *headerWayPoint-XXX*, y que cuando suba el scroll haga *headerWayPoint-YYY*
 
-Ejemplo:
+**Ejemplo**
+
 Cuando se baje el scroll y llegue a la sección, lo que hará es aplicar la clase *headerWayPoint-hidden*, y cuando suba el scroll aplicará la clase *headerWayPoint-small*
 
     <section id="page2" class="waypoint clearfix" data-animate-down="headerWayPoint-hidden" data-animate-up="headerWayPoint-small">
@@ -67,7 +68,16 @@ Cuando se baje el scroll y llegue a la sección, lo que hará es aplicar la clas
         </div>
     </section>
     
-
+Entonces podemos generar diversas acciones (animaciones) dependiendo la orientación del scroll
         
 
+#Animando un elemento cualquiera
+Cuando se requiere darle animación a un elemento al momento de mostrarse, se puede agregar con el siguiente atributo y clase
+    
+    class="animar" data-animation="animacionXX"
 
+
+**Ejemplo**
+Cuando la imagen se muestre hará el efecto **bounceIn**
+
+    <img class="animar" data-animation="bounceIn" src="css/img/imgxx.png" alt="">
