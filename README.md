@@ -52,6 +52,7 @@ Cuando queremos un elemento flotante en la parte de arriba
 
 ##Animando el menú de acuerdo a las secciones
 Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos : 
+    
     data-animate-down="headerWayPoint-XXX" data-animate-up="headerWayPoint-YYY"
 
 con esto le indicamos que cuando baje haga la animación (clase)  *headerWayPoint-XXX*, y que cuando suba el scroll haga *headerWayPoint-YYY*
