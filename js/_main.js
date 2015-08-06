@@ -1,36 +1,36 @@
 var globales = {
-    options: {
+    op: {
         w: window,
         d: document
     },
-    init: function () {
+    i: function () {
         'use strict';
-        /*global $*/
+        /*global $, Waypoint*/
 
         var t = this,
-            o = t.options;
+            o = t.op;
 
         $('body').jpreLoader();
 
-        $(o.w).on("resize", t.ajustarAlto);
-        $(o.d).on("ready", t.ajustarAlto);
+        $(o.w).on("resize", t.aa);
+        $(o.d).on("ready", t.aa);
 
-        t.parallax();
-        t.animation();
-        t.header();
-        t.scroll();
+        t.p();
+        t.a();
+        t.h();
+        t.s();
     },
-    parallax: function () {
+    p: function () {
         'use strict';
-        var o = this.options;
+        var o = this.op;
 
         if ($(o.w).width() > 480) {
             $('.parallax-bg1').parallax("50%", 0.5);
         }
     },
-    animation: function () {
+    a: function () {
         'use strict';
-        var o = this.options;
+        var o = this.op;
 
         $('.animar').appear();
         $(o.d.body).on('appear', '.animar', function () {
@@ -46,35 +46,35 @@ var globales = {
             }
         });
     },
-    header: function () {
+    h: function () {
         'use strict';
         var t = this,
-            o = t.options,
+            o = t.op,
             x,
-            wP = document.getElementsByClassName('waypoint');
+            w = document.getElementsByClassName('waypoint');
 
-        for (x = 0; x < wP.length; x += 1) {
-            t.fnWayPoint(x, wP);
+        for (x = 0; x < w.length; x += 1) {
+            t.wp(x, w);
         }
     },
-    scroll: function () {
+    s: function () {
         'use strict';
         $('body').scrollTo(0);
         $.scrollTo(0);
 
         $('.hwpMenu').click(function (evt) {
-            var dsID = this.getAttribute('data-scroll-id'),
-                dsClass = this.getAttribute('data-scroll-class');
-            if (dsID) {
-                $('body').scrollTo(document.getElementById(dsID), 800);
+            var i = this.getAttribute('data-scroll-id'),
+                c = this.getAttribute('data-scroll-class');
+            if (i) {
+                $('body').scrollTo(document.getElementById(i), 800);
             }
 
-            if (dsClass) {
-                $('body').scrollTo(document.getElementsByClassName(dsClass)[0], 800);
+            if (c) {
+                $('body').scrollTo(document.getElementsByClassName(c)[0], 800);
             }
         });
     },
-    ajustarAlto: function () {
+    aa: function () {
         'use strict';
 
         var dA = $('.domAlto'),
@@ -106,13 +106,13 @@ var globales = {
             "margin-top": tM + "px"
         });
     },
-    fnWayPoint: function (x, wayPoints) {
+    wp: function (x, p) {
         "use strict";
-        /*global ajustaAlto, Waypoint, $*/
+
         var headWayPoint = document.getElementById('headerWayPoint');
 
         return new Waypoint({
-            element: wayPoints[x],
+            element: p[x],
             offset: 20,
             handler: function (dire) {
                 var up = this.element.getAttribute('data-animate-up'),
@@ -130,7 +130,6 @@ var globales = {
 //Document Ready
 $(document).ready(function () {
     "use strict";
-    /* global globales,window */
-    globales.init();
+    globales.i();
 });
 
