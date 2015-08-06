@@ -39,4 +39,12 @@ La sección solo abarcará el contenido.
 	</div>
     </section>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Meter un elemento flotante
+    <header id="headerWayPoint" class="headerWayPoint">
+        <div class="headerWayPoint-perspective">
+            <div class="headerWayPoint-front headerWayPoint-small">
+               <a href="#" class="hwpMenu" data-scroll-id="page3">Page3</a>
+                <a href="#" class="hwpMenu" data-scroll-class="parallax-bg5">Page5</a>
+            </div>
+        </div>
+    </header>
