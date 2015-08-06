@@ -15,7 +15,7 @@ La sección abarcará todo el tamaño del navegador, y mostarará un texto centr
         </div>
     </section>
 
-##Página completa, abajo###
+##Página completa, abajo##
 La sección abarcará todo el tamaño del navegador, y mostarará un texto centrado (horizontal y vertical), así como un contenedor en la parte de abajo.
 
     <section id="page1" class="domAlto clearfix " >
@@ -39,12 +39,34 @@ La sección solo abarcará el contenido.
 	</div>
     </section>
 
-# Meter un elemento flotante
+# Menú (div) flotante
+Cuando queremos un elemento flotante en la parte de arriba
+
     <header id="headerWayPoint" class="headerWayPoint">
         <div class="headerWayPoint-perspective">
-            <div class="headerWayPoint-front headerWayPoint-small">
-               <a href="#" class="hwpMenu" data-scroll-id="page3">Page3</a>
-                <a href="#" class="hwpMenu" data-scroll-class="parallax-bg5">Page5</a>
+            <div class="headerWayPoint-xxx">
+               Este es un elemento flotante
             </div>
         </div>
     </header>
+
+##Animando el menú de acuerdo a las secciones
+Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos : 
+    data-animate-down="headerWayPoint-XXX" data-animate-up="headerWayPoint-YYY"
+
+con esto le indicamos que cuando baje haga la animación (clase)  *headerWayPoint-XXX*, y que cuando suba el scroll haga *headerWayPoint-YYY*
+
+Ejemplo:
+Cuando se baje el scroll y llegue a la sección, lo que hará es aplicar la clase *headerWayPoint-hidden*, y cuando suba el scroll aplicará la clase *headerWayPoint-small*
+
+    <section id="page2" class="waypoint clearfix" data-animate-down="headerWayPoint-hidden" data-animate-up="headerWayPoint-small">
+        <h1>Este es un titulo</h1>
+        <div>
+            <p>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</p>
+        </div>
+    </section>
+    
+
+        
+
+
