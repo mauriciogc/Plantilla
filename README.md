@@ -68,6 +68,16 @@ Ejemplo
             </div>
         </div>
     </header>
+    ...
+    <section id="page3" class="parallax-bg3 parallax waypoint clearfix" >
+        <h1>Esta es una otra sección con el contenido exacto 3</h1>
+        ...
+    </section>
+    <section id="page5" class="parallax-bg5 domAlto parallax clearfix ">
+    ...
+    </section>
+    ...
+    
 
 ##Animando el menú de acuerdo a las secciones
 Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos  
