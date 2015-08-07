@@ -49,6 +49,25 @@ Cuando queremos un elemento flotante en la parte de arriba
             </div>
         </div>
     </header>
+    
+##Poner links en el menú
+Se puede poner media uno de los dos atributos ( y al darle click, hará la animación hacia la sección)
+    
+    data-scroll-id="idXXX"
+    
+    data-scroll-class="clasXXX"
+    
+    
+Ejemplo
+
+    <header id="headerWayPoint" class="headerWayPoint">
+        <div class="headerWayPoint-perspective">
+            <div class="headerWayPoint-front">
+                <a href="#" class="hwpMenu" data-scroll-id="page3">Page3</a>
+                <a href="#" class="hwpMenu" data-scroll-class="parallax-bg5">Page5</a>
+            </div>
+        </div>
+    </header>
 
 ##Animando el menú de acuerdo a las secciones
 Podemos afectarlo cual el scroll este bajando o cuando este subiendo, con los siguientes atributos  
